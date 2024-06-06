@@ -7,8 +7,8 @@ body {
 nav {
   background-color: hsla(0, 0%, 0%, 0.939);
   margin-top: 0;
-  position: fixed;
-  width: 100%;
+ 
+  width: auto;
   height: auto;
   display: flex;
   align-items: center; 
@@ -22,14 +22,14 @@ nav ul {
   list-style-type: none;
   font-size: 22px;
   align-items: center;
-  margin-left: 22%; 
+  margin-left: 18%; 
 }
 
 nav ul li {
   padding: 0 10px; 
   position: relative;
   white-space: nowrap; 
-  margin-right: 4%;
+  margin-right: 2%;
 }
 
 nav ul li a {

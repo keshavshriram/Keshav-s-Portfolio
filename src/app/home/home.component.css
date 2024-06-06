@@ -1,0 +1,18 @@
+body
+{
+    padding: 0;
+}
+
+.home-container {
+    background-image: url('/assets/globe1.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire element */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 86.5vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    margin: 0;
+}
+
+.home-container p
+{
+    margin: 0;
+}
