@@ -3,3 +3,8 @@ body
     margin: 0;
     padding: 0;
 }
+
+/* :host
+{// can apply css on header component from here also by treating host and by changing Emulated to ShadowDom in app.component.ts file 
+    color: green;
+} */

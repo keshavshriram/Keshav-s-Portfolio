@@ -7,7 +7,6 @@ body {
 nav {
   background-color: hsla(0, 0%, 0%, 0.939);
   margin-top: 0;
- 
   width: auto;
   height: auto;
   display: flex;
@@ -55,7 +54,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after,
-nav ul li.active a::after { /* Added .active class for persistent underline */
+nav ul li.class-selected a::after { 
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -74,3 +73,5 @@ nav img {
   height: 8%;
   margin-top: 0.4%;
 }
+
+

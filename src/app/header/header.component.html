@@ -1,14 +1,16 @@
 <nav>
     <div class="nav-div">
-        <img src="assets/ks_logo_copy.jpg">
+        <img src="assets/ks_logo_copy.jpg" routerLink="">
         <!-- <h4>Keshav Shriram</h4> -->
         <ul>
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink='app-about-me'>About Me</a></li>
-            <li><a routerLink='app-skills'>Hard & Soft Skills</a></li>
-            <li><a routerLink='app-projects'>Projects</a></li>
-            <li><a routerLink='app-experience'>Internship/Experience</a></li>
-            <li><a routerLink='app-contact'>Contact</a></li>
+            <li routerLinkActive="class-selected" [routerLinkActiveOptions]="{exact:true}"><a   routerLink="">Home</a></li>
+            <li routerLinkActive="class-selected"><a routerLink='app-about-me'>About Me</a></li>
+            <li routerLinkActive="class-selected"><a routerLink='app-skills'>Hard & Soft Skills</a></li>
+            <li routerLinkActive="class-selected"><a routerLink='app-projects'>Projects</a></li>
+            <li routerLinkActive="class-selected"><a routerLink='app-experience'>Internship/Experience</a></li>
+            <li routerLinkActive="class-selected"><a routerLink='app-contact'>Contact</a></li>
         </ul>
     </div>
 </nav>
+
+<!-- <h1>Hello</h1> -->
