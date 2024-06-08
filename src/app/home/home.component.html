@@ -14,7 +14,27 @@
     </div>
 
     <div class="name">
-        <h1>Hello , my name is Keshav Shriram</h1>
-        <p>I Am Full Stack Developer</p>
+        <h1 @nameAnimation >Hello , my name is Keshav Shriram</h1>
+        <p @nameAnimation >I Am Full Stack Developer</p>
+    </div>
+
+    <div class="home-contact">
+        <a href="mailto:keshavshriram2002@gmail.com">
+        <div @emailAnimation class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email</h4>
+            <br>
+            <p>keshavshriram2002@gmail.com</p>
+        </div>
+        </a>
+
+        <a href="https://wa.me/9665448430?text=Hello%20Keshav,%20I%20Want%20to%20Schedule%20an%20Interview%20with%20you.">
+        <div @whatsappAnimation class="whatsapp">
+            <i class="bi bi-whatsapp"></i>
+            <h4>Whatsapp</h4>
+            <br>
+            <p>966-544-8430</p>
+        </div>
+        </a>
     </div>
 </div>

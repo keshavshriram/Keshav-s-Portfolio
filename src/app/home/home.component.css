@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center; 
     height: 100%; 
-    margin-top: 18%;
+    margin-top: 16%;
     margin-left: 18%;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 .insta-icon:hover
 {
-    background:linear-gradient(to top right ,rgb(54, 54, 163),rgb(225, 2, 139),rgb(218, 229, 147));
+    background:linear-gradient(to top right ,rgb(54, 54, 163),rgb(192, 2, 116),rgb(197, 207, 132));
 }
 .twitter-icon:hover
 {
@@ -91,3 +91,72 @@ body {
     /* margin-left: 10%; */
     font-size:large;
 }
+
+.home-contact
+{
+    color: white;
+    margin-left: 5.5%;
+    margin-top:5% ;
+    width: 50%;
+    height: 25%;
+    /* background-color: aqua; */
+    /* justify-content: space-evenly; */
+    display: inline-flex;
+    
+}
+
+.home-contact a
+{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.email, .whatsapp
+{
+    width: 48%;
+    height: 90%;
+    background-color:rgba(167, 167, 171, 0.4);
+    border-radius: 20px;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    padding:2px 22%;
+    /* transition:transform 200ms ease-out; */
+}
+
+.email p
+{
+    margin-left: -20px !important;
+}
+
+.bi-envelope,  .bi-whatsapp
+{
+    font-size: 2rem;
+    color: rgb(240, 118, 240);
+    margin-bottom: 10px;
+    
+}
+
+.home-contact a
+{
+    transition: 200ms;
+}
+
+.home-contact a:hover
+{
+    transform: scale(1.02);
+    transition: 200ms;
+}
+
+h4,p
+{
+    margin: 0;
+}
+
+
+/* {
+    width: 40%;
+    height: 90%;
+    background-color: blue;
+} */
