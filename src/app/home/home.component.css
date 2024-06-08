@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center; 
     height: 100%; 
-    margin-top: 20%;
+    margin-top: 18%;
     margin-left: 18%;
 }
 
@@ -42,11 +42,36 @@ body {
 }
 
 
-.social-icons li:hover {
-    background-color: #fff; 
-    color: #1a1a2e; 
-    cursor: pointer;
+.social-icons li:hover::before {
+    transform: translate(-50%, -50%) scale(1);
 }
+
+.social-icons li:hover {
+    transform: translateY(-10px); /* Move the icon slightly upward */
+    
+}
+.facebook-icon:hover
+{
+    background-color: rgb(91, 91, 190);
+}
+.insta-icon:hover
+{
+    background:linear-gradient(to top right ,rgb(54, 54, 163),rgb(225, 2, 139),rgb(218, 229, 147));
+}
+.twitter-icon:hover
+{
+    background-color: rgb(68, 68, 176);
+}
+.github-icon:hover
+{
+     background-color: black;
+}
+.linkedin-icon:hover
+{
+   background-color: rgb(10, 10, 229);
+}
+
+
 
 
 .social-icons li i {
