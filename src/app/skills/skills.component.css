@@ -1,9 +1,10 @@
-.main-div2
+.main-div
 {
     /* background-color: rgb(55, 50, 114); */
     height: 86.5vh;
     background: linear-gradient(to bottom,hsla(0, 0%, 0%, 0.939),rgb(7, 7, 55));
     width: 100%;
+    display: inline-table;
 }
 
 .soft-skills
@@ -40,10 +41,57 @@
 
 p
 {
-    margin: 0;
+    margin: 1%;
 }
 
-img
+.soft-skills img
 {
     border-radius: 8px;
+    transition: 500ms ease-in-out;
 }
+
+.soft-skills img:hover
+{
+    transform: scale(1.8);
+    transition: 500ms ease-in-out;
+}
+
+/* .hide-p
+{
+    display: none;
+    transition: 1000ms;  
+} */
+
+.hard-skills
+{
+    color: white;
+    width: auto;
+    /* margin-left: 5.5%;
+    margin-top:5% ; */
+    
+    /* height: 25%; */
+    /* background-color: aqua; */
+    display: inline-flex;
+    text-align: center;
+    /* justify-content: space-between; */
+    /* background-color: aqua; */
+    gap: 1%;
+    margin: 7%;
+
+    
+}
+
+.glass-container
+{
+    width: auto;
+    height: 100%;
+    background-color:rgba(144, 144, 170, 0.4);
+    border-radius: 20px;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+
+    padding:2% 1%;
+    /* transition:transform 200ms ease-out; */
+}
+

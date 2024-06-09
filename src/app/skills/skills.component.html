@@ -1,19 +1,65 @@
-<div class="main-div" >
-     <div class="soft-skills">
+<div class="main-div">
+    <div class="soft-skills">
         <ul>
-            <li><img  src="/assets/html5_logo3.png" width="12%" ><br>HTML 5</li>
-            <li><img src="/assets/css_logo1.png" width="12%" ><br>CSS 3</li>
-            <li><img src="/assets/bootstrap_logo1.png" width="12%" ><br>Bootstrap</li>
-            <li><img src="/assets/angular_logo1.png" width="12%" ><br>Angular</li>
+            <li><img (mouseover)="makeFalse(htmlp)" (mouseleave)="makeTrue(htmlp)" src="/assets/html5_logo3.png"
+                    width="12%"><br>
+                <p #htmlp>HTML 5</p>
+            </li>
+            <li><img (mouseover)="makeFalse(cssp)" (mouseleave)="makeTrue(cssp)" src="/assets/css_logo1.png"
+                    width="12%"><br>
+                <p #cssp>CSS 3</p>
+            </li>
+            <li><img (mouseover)="makeFalse(bootstrapp)" (mouseleave)="makeTrue(bootstrapp)"
+                    src="/assets/bootstrap_logo1.png" width="12%"><br>
+                <p #bootstrapp>Bootstrap</p>
+            </li>
+            <li><img (mouseover)="makeFalse(angularp)" (mouseleave)="makeTrue(angularp)" src="/assets/angular_logo1.png"
+                    width="12%"><br>
+                <p #angularp>Angular</p>
+            </li>
         </ul>
 
         <ul>
-            <li><img src="/assets/jquery_logo1.png" width="12%" ><br>JQuery</li>
-            <li><img src="/assets/javascript_logo1.png" width="12%" ><br>JavaScript</li>
-            <li><img src="/assets/java_logo2.png" width="12%" ><br>Java</li>
-            <li><div><img src="/assets/oraclesql_logo1.png" width="12%" ><br><p>Oracle-SQL</p></div></li>
-           
+            <li><img (mouseover)="makeFalse(jqueryp)" (mouseleave)="makeTrue(jqueryp)" src="/assets/jquery_logo1.png"
+                    width="12%"><br>
+                <p #jqueryp>JQuery</p>
+            </li>
+            <li><img (mouseover)="makeFalse(javascriptp)" (mouseleave)="makeTrue(javascriptp)"
+                    src="/assets/javascript_logo1.png" width="12%"><br>
+                <p #javascriptp>JavaScript</p>
+            </li>
+            <li><img (mouseover)="makeFalse(javap)" (mouseleave)="makeTrue(javap)" src="/assets/java_logo2.png"
+                    width="12%"><br>
+                <p #javap>Java</p>
+            </li>
+            <li>
+                <div><img (mouseover)="makeFalse(oraclesqlp)" (mouseleave)="makeTrue(oraclesqlp)"
+                        src="/assets/oraclesql_logo1.png" width="12%"><br>
+                    <p #oraclesqlp>Oracle-SQL</p>
+                </div>
+            </li>
+
         </ul>
 
+    </div>
+
+    
+
+    <div class="hard-skills">
+        <div class="glass-container">
+            
+            <img src="assets/creativity_logo2.png" width="15%">  <br>
+            <p>Creativity</p>
+        </div>
+
+        <div class="glass-container">
+            <img src="assets/resolving_problem3.png" width="15%">  <br>
+            <p>Resolving The Problems</p>
+        </div>
+
+        <div class="glass-container">
+            <img src="assets/adaptibility_logo1.png" width="15%">  <br>
+            <p>Adaptibility</p>
+        </div>
      </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -10,4 +10,18 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+ 
+  makeFalse(element :HTMLParagraphElement):void
+  {
+    element.style.opacity = '0';
+
+    element.style.transition ='200ms';
+  }
+
+  makeTrue(element : HTMLParagraphElement):void
+  {
+    element.style.opacity='1';
+    element.style.transition='1000ms ease-in-out'
+    
+  }
 }
