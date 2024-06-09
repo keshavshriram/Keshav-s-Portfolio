@@ -1,4 +1,4 @@
-.main-div
+.local-main-div
 {
     /* background-color: rgb(55, 50, 114); */
     height: 86.5vh;
@@ -14,6 +14,7 @@
     list-style: none;
     
     width: 100%;
+    /* background-color: aqua; */
 
 }
 
@@ -71,12 +72,13 @@ p
     
     /* height: 25%; */
     /* background-color: aqua; */
+    /* justify-content: space-between; */
     display: inline-flex;
     text-align: center;
-    /* justify-content: space-between; */
-    /* background-color: aqua; */
+    
+    
     gap: 1%;
-    margin: 7%;
+    margin: 0 7%;
 
     
 }
@@ -92,6 +94,7 @@ p
     text-align: center;
 
     padding:2% 1%;
+    margin: 0;
     /* transition:transform 200ms ease-out; */
 }
 
