@@ -1,0 +1,49 @@
+.main-div2
+{
+    /* background-color: rgb(55, 50, 114); */
+    height: 86.5vh;
+    background: linear-gradient(to bottom,hsla(0, 0%, 0%, 0.939),rgb(7, 7, 55));
+    width: 100%;
+}
+
+.soft-skills
+{
+    display: table-row;
+    color: white;
+    list-style: none;
+    
+    width: 100%;
+
+}
+
+.soft-skills ul
+{
+    width: auto;
+    /* background-color: brown; */
+    justify-content: space-evenly;
+    display: inline-flex;
+
+    margin-top: 5%;
+    margin-right: 1%;
+    list-style: none;
+}
+
+.soft-skills ul li
+{
+    
+    /* background-color: blueviolet; */
+    width: 80%;
+    text-align: center;
+
+    
+}
+
+p
+{
+    margin: 0;
+}
+
+img
+{
+    border-radius: 8px;
+}
