@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
           style({ transform: 'translate(-20px, -70px)', opacity: 0 }),
           stagger(200, [
             // Animate to the normal position and opacity 1
-            animate('250ms ease-out', style({ transform: 'translate(0, 0)', opacity: 1 }))
+            animate('200ms ease-out', style({ transform: 'translate(0, 0)', opacity: 1 }))
           ])
         ])
       ])
