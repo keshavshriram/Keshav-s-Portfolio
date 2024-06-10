@@ -12,6 +12,7 @@ nav {
   display: flex;
   align-items: center; 
   padding: 10px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul {

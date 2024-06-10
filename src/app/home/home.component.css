@@ -1,5 +1,5 @@
 
-body {
+body{
     padding: 0;
 }
 
@@ -11,6 +11,12 @@ body {
     height: 86.5vh;
     width: 100%;
     margin: 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home-container h4,h1 
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -38,6 +44,7 @@ body {
     border: 2px solid #fff; 
     border-radius: 20%; 
     color: #fff; 
+    
     transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
@@ -47,7 +54,7 @@ body {
 }
 
 .social-icons li:hover {
-    transform: translateY(-10px); /* Move the icon slightly upward */
+    transform: translateY(-10px);
     
 }
 .facebook-icon:hover

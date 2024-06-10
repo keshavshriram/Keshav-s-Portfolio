@@ -14,4 +14,8 @@ body{
     height: 86.5vh;
     background: linear-gradient(to bottom,hsla(0, 0%, 0%, 0.939),rgb(7, 7, 55),rgb(7, 7, 55),rgb(7, 7, 55),rgb(7, 7, 55));
     display: inline-flex;
+    font-family:Georgia;
 }
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

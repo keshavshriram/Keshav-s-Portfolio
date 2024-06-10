@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -19,14 +20,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     HomeComponent,
     AboutMeComponent,
     SkillsComponent,
-    ProjectsComponent,
+    
     ExperienceComponent,
     ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    ProjectsComponent,
+    BrowserAnimationsModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
