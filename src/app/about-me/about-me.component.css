@@ -14,7 +14,7 @@
 h2
 {
     font-family: Georgia;
-    margin: 1%;
+    margin: 0.4%;
 }
 
 .info
@@ -23,15 +23,20 @@ h2
     margin: 1%;
     color: white;
     border: 2px solid rgb(38, 38, 132);
-    padding: 0px 20px 0px 20px;
+    padding: 15px;
     border-radius: 10px;
 }
 
 .info p
 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 font
 {
     color:  rgb(238, 227, 149);
+}
+
+hr
+{
+    margin: 10px 0px;
 }
