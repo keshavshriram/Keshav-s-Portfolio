@@ -1,1 +1,13 @@
-<p>experience works!</p>
+<div class="main-div">
+    <div @internshipAnimation class="internship">
+        <h2>Internship</h2>
+        <hr>
+        <p>Internship Cum Training At Anvistar Pvt. Ltd.</p>
+    </div>
+
+    <div @certificateAnimation class="certificates">
+        <h2>Certificates</h2>
+        <hr>
+        <p *ngFor="let certificate of cerificates">{{certificate}}</p>
+    </div>
+</div>
