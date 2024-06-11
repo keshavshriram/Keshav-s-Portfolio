@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
   animations: [
       trigger('AboutMeAanimation', [
         state('void', style({
-          transform: 'scale(0.1)',
+          transform: 'scale(0)',
           opacity: 0,
         })),
         state('*', style({
           trasform: 'scale(1)',
           opacity: 1,
         })),
-        transition('void=>*', [animate('800ms ease-out')])
+        transition('void=>*', [animate('1000ms ease-out')])
       ]),
 
       trigger('randomMovement', [
