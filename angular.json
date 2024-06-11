@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/about-keshav",
+            "outputPath": "dist/About-Keshav",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [

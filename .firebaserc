@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "dist/about-keshav",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "projects": {
+    "default": "keshav-s-portfolio"
+  }
+}
