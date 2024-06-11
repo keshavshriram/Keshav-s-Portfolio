@@ -12,10 +12,16 @@
     width: 40%;
     margin-top: 5%;
     margin-left: 5%;
-    padding: 3.5%;
+    padding: 3%;
     font-size: 1.3rem;
     
 }
+
+.internship hr
+{
+    margin: 2% 10%;
+}
+
 
 .certificates,.internship
 {

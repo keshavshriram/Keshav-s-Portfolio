@@ -16,7 +16,7 @@ import { Component, ElementRef } from '@angular/core';
     trigger('hardSkillsAnimation',[
       transition(':enter',[
         style({
-          transform:'scale(0.5)'
+          transform:'scale(0)'
         }),
         animate(500,style({
           transform:'scale(1)'
