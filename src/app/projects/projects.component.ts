@@ -24,7 +24,7 @@ export class ProjectsComponent {
   projects = [
     { title: 'E-Commerce', image: '/assets/ecommerce_img.PNG', githubLink: 'https://github.com/keshavshriram/E-Commerce', liveLink: 'https://e-commerce-3ff07.web.app/' },
     { title: 'Portfolio', image: '/assets/portfolio_img.PNG', githubLink: 'https://github.com/keshavshriram/Keshav-s-Portfolio', liveLink: '#' },
-    { title: 'Company CRM', image: '/assets/company-crm_img.PNG', githubLink: 'https://github.com/keshavshriram/Company-CRM', liveLink: 'https://github.com/keshavshriram/Company-CRM' },
+    { title: 'Company CRM', image: '/assets/company-crm_img.PNG', githubLink: 'https://github.com/keshavshriram/Company-CRM', liveLink: 'https://keshavshriram.github.io/Company-CRM/' },
     { title: 'E-Pass', image: '/assets/e-pass_img.PNG', githubLink: 'https://github.com/keshavshriram/E-pass', liveLink: 'https://github.com/keshavshriram/E-pass' },
     { title: 'Food Point', image: '/assets/burger_img.PNG', githubLink: 'https://github.com/keshavshriram/Burger-Pizza-Site-project', liveLink: 'https://keshavshriram.github.io/Burger-Pizza-Site-project/' }
   ];
