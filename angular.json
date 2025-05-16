@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "About-Keshav:build:production"
+              "buildTarget": "About-Keshav:build:production"
             },
             "development": {
-              "browserTarget": "About-Keshav:build:development"
+              "buildTarget": "About-Keshav:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "About-Keshav:build"
+            "buildTarget": "About-Keshav:build"
           }
         },
         "test": {
