@@ -1,26 +1,58 @@
 <div class="home-container">
     
-    <div class="icon-container">
+    <div class=" text-white flex justify-center md:justify-start lg:md:justify-start">
         
-        <ul @IconsAnimation class="social-icons">
-            <a href="https://github.com/keshavshriram"><li  class="github-icon"><i class="bi bi-github"></i></li></a> 
-            <a href="https://leetcode.com/u/keshavshriram/"><li><img src="/assets/leetcode_logo1.png" height="21px" width="21px"></li></a>
-            <a href="https://www.linkedin.com/in/keshav-shriram-b36737206/"><li  class="linkedin-icon"><i class="bi bi-linkedin"></i></li></a>
-            <a href=""><li class="facebook-icon"><i class="bi bi-facebook"></i></li></a>
-            <a href=""><li  class="insta-icon"><i class="bi bi-instagram"></i></li></a>
-            <a href=""><li  class="twitter-icon"><i class="bi bi-twitter"></i></li></a>
+        <ul @IconsAnimation class="flex gap-2 md:m-4 lg:m-8">
+            <a href="https://github.com/keshavshriram">
+                <li  class="github-icon p-[10px] ">
+                    <i class="bi bi-github md:text-[22px] lg:text-[34px]"></i>
+                </li>
+            </a> 
+            <a href="https://leetcode.com/u/keshavshriram/">
+                <li class="-mb-[17px] p-[10px] ">
+                    <img src="/assets/leetcode_logo1.png" class="h-[20px] w-[15px] md:h-[24px] md:w-[23px] lg:h-[36px] lg:w-[33px]" >
+                </li>
+            </a>
+            <a href="https://www.linkedin.com/in/keshav-shriram-b36737206/">
+                <li  class="linkedin-icon p-[10px] ">
+                    <i class="bi bi-linkedin md:text-[22px] lg:text-[34px]">
+
+                    </i>
+                </li>
+            </a>
+            <a href="">
+                <li class="facebook-icon p-[10px]">
+                    <i class="bi bi-facebook md:text-[22px] lg:text-[34px]">
+
+                    </i>
+                </li>
+            </a>
+            <a href="">
+                <li  class="insta-icon p-[10px] ">
+                    <i class="bi bi-instagram md:text-[22px] lg:text-[34px]">
+
+                    </i>
+                </li>
+            </a>
+            <a href="">
+                <li  class="twitter-icon  p-[10px] ">
+                    <i class="bi bi-twitter md:text-[22px] lg:text-[34px]">
+
+                    </i>
+                </li>
+            </a>
             
         </ul>
     </div>
 
-    <div @nameAnimation class="name">
-        <h1  >Hello , my name is Keshav Shriram</h1>
-        <p >I Am Full Stack Developer</p>
+    <div @nameAnimation class="text-white mt-20 flex flex-col items-center md:items-start lg:items-start md:ml-[18px] lg:ml-[38px] ">
+        <h1 class="w-fit" >Hello , my name is Keshav Shriram</h1>
+        <p class="w-fit" >I Am Full Stack Developer</p>
     </div>
 
-    <div class="home-contact">
+    <div class="text-white flex flex-col gap-4 m-4 mt-20 md:mt-32 lg:mt-36 md:flex-row lg:flex-row md:ml-[17px] lg:ml-[37px]">
         <a href="mailto:keshavshriram2002@gmail.com">
-        <div @emailAnimation class="email">
+        <div @emailAnimation class="bg-[#a7a7ab] !opacity-70 p-2 rounded-xl !transition !duration-200 hover:!scale-105 md:w-[350px] lg:w-[400px] h-[200px] text-center content-center ">
             <i class="bi bi-envelope"></i>
             <h4>Email</h4>
             <br>
@@ -29,7 +61,7 @@
         </a>
 
         <a href="https://wa.me/9665448430?text=Hello%20Keshav,%20I%20Want%20to%20Schedule%20an%20Interview%20with%20you.">
-        <div @whatsappAnimation class="whatsapp">
+        <div @whatsappAnimation class="bg-[#a7a7ab] !opacity-70 p-2 rounded-xl !transition !duration-200 hover:!scale-105 md:w-[350px] lg:w-[400px] h-[200px] text-center content-center">
             <i class="bi bi-whatsapp"></i>
             <h4>Whatsapp</h4>
             <br>

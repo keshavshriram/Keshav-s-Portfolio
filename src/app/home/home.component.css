@@ -8,7 +8,7 @@ body{
     background-image: url('/assets/globe1.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    height: 86.5vh;
+    height: 100vh;
     width: 100%;
     margin: 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -20,10 +20,7 @@ body{
 }
 
 
-.icon-container {
-    color: white; 
-    display: inline-block; 
-}
+
 
 
 .social-icons {
@@ -37,10 +34,9 @@ body{
 }
 
 
-.social-icons li {
+li {
     list-style: none; 
-    display: inline-block; 
-    padding: 10px;
+    display: inline-block;
     border: 2px solid #fff; 
     border-radius: 20%; 
     color: #fff; 
@@ -49,11 +45,11 @@ body{
 }
 
 
-.social-icons li:hover::before {
+li:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.social-icons li:hover {
+li:hover {
     transform: translateY(-10px);
     
 }
@@ -85,39 +81,11 @@ body{
     font-size: 1.5rem; 
 }
 
-.name
-{
-    color: white;
-    margin-left: 5.5%;
-    margin-top: 5%;
-}
 
-.name p
-{
-    /* font-weight: 0.5px; */
-    /* margin-left: 10%; */
-    font-size:large;
-}
 
-.home-contact
-{
-    color: white;
-    margin-left: 5.5%;
-    margin-top:5% ;
-    width: 50%;
-    height: 25%;
-    /* background-color: aqua; */
-    /* justify-content: space-evenly; */
-    display: inline-flex;
-    
-}
 
-.home-contact a
-{
-    width: 100%;
-    text-decoration: none;
-    color: white;
-}
+
+
 
 .email, .whatsapp
 {

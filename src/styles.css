@@ -1,5 +1,9 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/components';
+
 body{
     margin: 0;
     padding: 0;
