@@ -1,5 +1,5 @@
-<div class="main-div">
-  <ngx-slick-carousel class="carousel" [config]="slideConfig">
+<div class="main-div  content-center">
+  <ngx-slick-carousel class="carousel h-3/5 md:h-auto lg:h-auto" [config]="slideConfig">
     <div ngxSlickItem *ngFor="let project of projects" class="slide">
       <img [src]="project.image" alt="{{ project.title }}" style="height: 270px;">
       <div class="project-info">

@@ -2,22 +2,20 @@
     <div class=" flex flex-row justify-between">
         <img src="assets/ks_logo_copy.jpg" routerLink="" class="h-[50px] w-[85px] ">
 
-        <!-- <div>
-            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item>Item 1</button>
-                <button mat-menu-item>Item 2</button>
+        <div class="flex md:hidden lg:hidden ">
+            <button mat-button [matMenuTriggerFor]="menu" class="rounded-full ">
+                <mat-icon class="rounded-full text-white text-xl">menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" >
+                <ng-container *ngFor="let item of menuOptions">
+                    <button mat-menu-item (click)="selectMenuItem(item)" ><a [routerLink]="item.route"></a>{{item.module}}</button>
+                </ng-container>
             </mat-menu>
-        </div> -->
+        </div>
         <ul class="!hidden md:!flex lg:!flex p-2">
-            <li routerLinkActive="class-selected" [routerLinkActiveOptions]="{exact:true}"><a   routerLink="">Home</a></li>
-            <li routerLinkActive="class-selected"><a routerLink='app-about-me'>About Me</a></li>
-            <li routerLinkActive="class-selected"><a routerLink='app-skills'>Skills</a></li>
-            <li routerLinkActive="class-selected"><a routerLink='app-projects'>Projects</a></li>
-            <li routerLinkActive="class-selected"><a routerLink='app-experience'>Internship & Certificates</a></li>
-            <li routerLinkActive="class-selected"><a routerLink='app-contact'>Contact</a></li>
+            <ng-container *ngFor="let item of menuOptions">
+                <li routerLinkActive="class-selected" [routerLinkActiveOptions]="{exact:item.module == 'Home'}"><a [routerLink]="item.route">{{item.module}}</a></li>
+            </ng-container>
         </ul>
     </div>
 </nav>
-
-<!-- <h1>Hello</h1> -->

@@ -29,17 +29,36 @@ import { Component, ElementRef } from '@angular/core';
 export class SkillsComponent {
 
  
-  makeFalse(element :HTMLParagraphElement):void
-  {
-    element.style.opacity = '0';
+  skills = [
+    { name: 'HTML 5', logo: 'html5_logo3.png' },
+    { name: 'CSS 3', logo: 'css_logo1.png' },
+    { name: 'Bootstrap', logo: 'bootstrap_logo1.png' },
+    { name: 'Angular', logo: 'angular_logo1.png' },
+    { name: 'JQuery', logo: 'jquery_logo1.png' },
+    { name: 'JavaScript', logo: 'javascript_logo1.png' },
+    { name: 'Java', logo: 'java_logo2.png' },
+    { name: 'Oracle-SQL', logo: 'oraclesql_logo1.png' }
+  ];
 
-    element.style.transition ='200ms';
+  // In your component.ts file
+hardSkills = [
+  {
+    icon: 'assets/creativity_logo2.png',
+    name: 'Creativity'
+  },
+  {
+    icon: 'assets/resolving_problem3.png',
+    name: 'Problem Solving'
+  },
+  {
+    icon: 'assets/adaptibility_logo1.png',
+    name: 'Adaptability'
   }
-
-  makeTrue(element : HTMLParagraphElement):void
-  {
-    element.style.opacity='1';
-    element.style.transition='1000ms ease-in-out'
-    
+];
+  
+  highlightedSkill: string = '';
+  
+  highlightSkill(skillName: string, isHighlighted: boolean) {
+    this.highlightedSkill = isHighlighted ? skillName : '';
   }
 }

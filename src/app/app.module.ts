@@ -12,6 +12,10 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,16 +24,20 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     HomeComponent,
     AboutMeComponent,
     SkillsComponent,
-    
+    ProjectsComponent,
     ExperienceComponent,
     ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProjectsComponent,
     BrowserAnimationsModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    SlickCarouselModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

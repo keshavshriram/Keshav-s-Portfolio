@@ -1,54 +1,14 @@
-<div class="main-div">
+<div class="main-div flex items-center">
     
-    <div class="contact-info">
-        
-        <div @animateContact class="contact-method">
-             <i class="bi bi-envelope"></i>
-
-            <div class="contact-details">
-                <h3>Email</h3>
-                <p>keshavshriram2002&#64;gmail.com</p>
-                <a href="mailto:keshavshriram2002@gmail.com">Write to me &gt;&gt;</a>
-            </div>
-        </div>
-        
-        <div @animateContact  class="contact-method">
-            <i class="bi bi-geo-alt"></i>
-
-            <div class="contact-details">
-                <h3>Address</h3>
-                <p>Flat no.502,SaiShanti Avenue,Sumukh Society,Narhe,Haveli,Pune,Maharashtra,India, Pin-411041</p>
-                
-            </div>
-        </div>
-
-        
-        <div @animateContact class="contact-method">
-            
-            <i class="bi bi-whatsapp"></i>
-            
-            <div class="contact-details">
-                <h3>Whatsapp/Phone</h3>
-                <p>9665448430</p>
-                <a href="https://wa.me/9665448430">Write to me &gt;&gt;</a>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4 items-center">
+        <div *ngFor="let contact of contacts" @animateContact
+            class="bg-[#a7a7ab66] p-[20px] rounded-2xl transition-transform duration-500 hover:scale-105 ease-out lg:p-10">
+            <i [class]="'bi ' + contact.icon"></i>
+            <div class="text-white">
+                <h3>{{ contact.title }}</h3>
+                <p>{{ contact.value }}</p>
+                <a *ngIf="contact.link" [href]="contact.link">Write to me &gt;&gt;</a>
             </div>
         </div>
     </div>
-
-
-    <!-- <div class="contact-form">
-        <form>
-            <div class="form-group">
-                <input type="text" placeholder="Number" required>
-            </div>
-            
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <textarea placeholder="Message" required></textarea>
-            </div>
-            <button type="submit">Send <span>&#9993;</span></button>
-        </form>
-    </div> -->
 </div>

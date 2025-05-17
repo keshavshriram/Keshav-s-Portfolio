@@ -1,10 +1,5 @@
 .local-main-div
 {
-    /* background-color: rgb(55, 50, 114); */
-    height: 86.5vh;
-    background: linear-gradient(to bottom,hsla(0, 0%, 0%, 0.939),rgb(7, 7, 55));
-    width: 100%;
-    display: inline-table;
 }
 
 .soft-skills
@@ -19,78 +14,6 @@
 
 }
 
-.soft-skills ul
-{
-    width: auto;
-    /* background-color: brown; */
-    justify-content: space-evenly;
-    display: inline-flex;
 
-    margin-top: 5%;
-    margin-right: 1%;
-    list-style: none;
-}
 
-.soft-skills ul li
-{
-    
-    /* background-color: blueviolet; */
-    width: 80%;
-    text-align: center;
-
-    
-}
-
-p
-{
-    margin: 1%;
-}
-
-.soft-skills img
-{
-    border-radius: 8px;
-    transition: 500ms ease-in-out;
-}
-
-.soft-skills img:hover
-{
-    transform: scale(1.8);
-    transition: 500ms ease-in-out;
-}
-
-/* .hide-p
-{
-    display: none;
-    transition: 1000ms;  
-} */
-
-.hard-skills
-{
-    color: white;
-    width: 80%;
-    margin-top:5% ;
-    margin-left: 10%;
-    
-    /* height: 25%; */
-    /* background-color: aqua; */
-    display: inline-flex;
-    justify-content: space-between;
-    gap: 5%;
-    
-}
-
-.glass-container
-{
-    width: auto;
-    height: 100%;
-    background-color:rgba(144, 144, 170, 0.4);
-    border-radius: 20px;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-
-    padding:2% 1%;
-    margin: 0;
-    /* transition:transform 200ms ease-out; */
-}
 

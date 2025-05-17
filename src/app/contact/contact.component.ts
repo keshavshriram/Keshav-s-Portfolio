@@ -21,5 +21,24 @@ import { Component } from '@angular/core';
   ]
 })
 export class ContactComponent {
+contacts = [
+  {
+    icon: 'bi-envelope',
+    title: 'Email',
+    value: 'keshavshriram2002@gmail.com',
+    link: 'mailto:keshavshriram2002@gmail.com'
+  },
+  {
+    icon: 'bi-geo-alt',
+    title: 'Address',
+    value: 'Flat no.502, SaiShanti Avenue, Sumukh Society, Narhe, Haveli, Pune, Maharashtra, India, Pin-411041'
+  },
+  {
+    icon: 'bi-whatsapp',
+    title: 'Whatsapp/Phone',
+    value: '9665448430',
+    link: 'https://wa.me/9665448430'
+  }
+];
 
 }

@@ -1,65 +1,24 @@
 <div class="main-div local-main-div">
     <div @softSkillsAnimation class="soft-skills">
-        <ul>
-            <li><img (mouseover)="makeFalse(htmlp)" (mouseleave)="makeTrue(htmlp)" src="/assets/html5_logo3.png"
-                    width="12%"><br>
-                <p #htmlp>HTML 5</p>
-            </li>
-            <li><img (mouseover)="makeFalse(cssp)" (mouseleave)="makeTrue(cssp)" src="/assets/css_logo1.png"
-                    width="12%"><br>
-                <p #cssp>CSS 3</p>
-            </li>
-            <li><img (mouseover)="makeFalse(bootstrapp)" (mouseleave)="makeTrue(bootstrapp)"
-                    src="/assets/bootstrap_logo1.png" width="12%"><br>
-                <p #bootstrapp>Bootstrap</p>
-            </li>
-            <li><img (mouseover)="makeFalse(angularp)" (mouseleave)="makeTrue(angularp)" src="/assets/angular_logo1.png"
-                    width="12%"><br>
-                <p #angularp>Angular</p>
-            </li>
-        </ul>
-
-        <ul>
-            <li><img (mouseover)="makeFalse(jqueryp)" (mouseleave)="makeTrue(jqueryp)" src="/assets/jquery_logo1.png"
-                    width="12%"><br>
-                <p #jqueryp>JQuery</p>
-            </li>
-            <li><img (mouseover)="makeFalse(javascriptp)" (mouseleave)="makeTrue(javascriptp)"
-                    src="/assets/javascript_logo1.png" width="12%"><br>
-                <p #javascriptp>JavaScript</p>
-            </li>
-            <li><img (mouseover)="makeFalse(javap)" (mouseleave)="makeTrue(javap)" src="/assets/java_logo2.png"
-                    width="12%"><br>
-                <p #javap>Java</p>
-            </li>
-            <li>
-                <div><img (mouseover)="makeFalse(oraclesqlp)" (mouseleave)="makeTrue(oraclesqlp)"
-                        src="/assets/oraclesql_logo1.png" width="12%"><br>
-                    <p #oraclesqlp>Oracle-SQL</p>
-                </div>
-            </li>
-
-        </ul>
-
-    </div>
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 mt-11">
+          <div *ngFor="let skill of skills" class="justify-items-center col-span-1 mb-8">
+            <img [src]="'assets/' + skill.logo" 
+                 [alt]="skill.name + ' logo'"
+                 (mouseover)="highlightSkill(skill.name, true)"
+                 (mouseleave)="highlightSkill(skill.name, false)"
+                 class="flex justify-self-center rounded-lg transition-transform duration-500 ease-in-out hover:scale-[1.8] w-1/5 md:w-1/12 lg:w-1/12 ">
+            <p [class.opacity-0]="highlightedSkill == skill.name" class="!mt-4 transition-opacity duration-500">{{ skill.name }}</p>
+          </div>
+        </div>
+      </div>
 
     
 
-    <div class="hard-skills">
-        <div  @hardSkillsAnimation  class="glass-container">
-            
-            <img src="assets/creativity_logo2.png" width="15%">  <br>
-            <p>Creativity</p>
+    <div class=" w-9/12 m-auto text-white grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 lg:gap-4  md:mt-8 lg:mt-8">
+        <div *ngFor="let skill of hardSkills" @hardSkillsAnimation class="flex flex-col items-center p-2 lg:py-[11%] rounded-2xl bg-[#9090aa66]">
+            <img [src]="skill.icon" [alt]="skill.name + ' icon'"
+                class="w-[15%] mb-4 hover:scale-110 transition-transform duration-300">
+            <p class="text-center font-medium">{{ skill.name }}</p>
         </div>
-
-        <div  @hardSkillsAnimation  class="glass-container">
-            <img src="assets/resolving_problem3.png" width="15%">  <br>
-            <p>Resolving The Problems</p>
-        </div>
-
-        <div  @hardSkillsAnimation  class="glass-container">
-            <img src="assets/adaptibility_logo1.png" width="15%">  <br>
-            <p>Adaptibility</p>
-        </div>
-     </div>
+    </div>
 </div>

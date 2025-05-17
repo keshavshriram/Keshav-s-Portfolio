@@ -5,9 +5,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css'],
-  standalone: true,
-  imports: [SlickCarouselModule, CommonModule]
+  styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
   slideConfig = {
@@ -15,10 +13,30 @@ export class ProjectsComponent {
     slidesToScroll: 1,
     dots: true,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
+    arrows: true,
     prevArrow: '<button type="button" style="height: 100%; width:3.5%; background:linear-gradient(to left, #242430,#10101f ); border-radius: 20px 0 0 20px;" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" style="height: 100%; width:3.5%;  background:linear-gradient(to right, #242430,#10101f ); border-radius: 0 20px 20px 0;" class="slick-next">Next</button>'
+    nextArrow: '<button type="button" style="height: 100%; width:3.5%;  background:linear-gradient(to right, #242430,#10101f ); border-radius: 0 20px 20px 0;" class="slick-next">Next</button>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false, // Hide arrows on mobile
+          dots: true
+        }
+      }
+    ]
   };
 
   projects = [
