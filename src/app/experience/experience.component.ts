@@ -46,5 +46,5 @@ import { Component } from '@angular/core';
 })
 export class ExperienceComponent {
 
-  cerificates: string[] = ["Java Certificate", "Web Development", "Oracle-SQL", "Avishkar Project Competition", "Maharashtra State Certificate in IT  with 82%"];
+  cerificates: string[] = ["Dot Net Core","Java", "Oracle-SQL", "Web Development", "Avishkar Project Competition"];
 }

@@ -6,7 +6,7 @@
                  [alt]="skill.name + ' logo'"
                  (mouseover)="highlightSkill(skill.name, true)"
                  (mouseleave)="highlightSkill(skill.name, false)"
-                 class="flex justify-self-center rounded-lg transition-transform duration-500 ease-in-out hover:scale-[1.8] w-1/5 md:w-1/12 lg:w-1/12 ">
+                 class="flex justify-self-center rounded-lg transition-transform duration-500 ease-in-out hover:scale-[1.8] w-1/5 md:w-1/12 lg:w-1/12 " [ngClass]="{'!rounded-full' : skill.name =='.Net Core'}">
             <p [class.opacity-0]="highlightedSkill == skill.name" class="!mt-4 transition-opacity duration-500">{{ skill.name }}</p>
           </div>
         </div>

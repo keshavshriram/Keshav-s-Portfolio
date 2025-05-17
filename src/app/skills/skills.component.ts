@@ -30,11 +30,12 @@ export class SkillsComponent {
 
  
   skills = [
+    { name: 'Angular', logo: 'angular_logo1.png' },
+    { name: '.Net Core', logo: 'DotNetImage.png' },
     { name: 'HTML 5', logo: 'html5_logo3.png' },
     { name: 'CSS 3', logo: 'css_logo1.png' },
+    { name: 'Tailwind', logo: 'tailwind.png' },
     { name: 'Bootstrap', logo: 'bootstrap_logo1.png' },
-    { name: 'Angular', logo: 'angular_logo1.png' },
-    { name: 'JQuery', logo: 'jquery_logo1.png' },
     { name: 'JavaScript', logo: 'javascript_logo1.png' },
     { name: 'Java', logo: 'java_logo2.png' },
     { name: 'Oracle-SQL', logo: 'oraclesql_logo1.png' }

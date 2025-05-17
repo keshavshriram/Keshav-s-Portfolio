@@ -44,9 +44,9 @@ export class HeaderComponent {
   @ViewChild('menuTrigger') menuTrigger!: MatMenuTrigger;
 
   selectMenuItem(item: {module: string, route?: string}) {
-    if (item.route) {
-      this.router.navigate([item.route]);
-    }
+    
+    this.router.navigate([item.route]);
+    
     this.menuTrigger.closeMenu();
   }
 
