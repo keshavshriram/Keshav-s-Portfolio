@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css'],
   animations: [
-    trigger('internshipAnimation', [
+    trigger('experinceAnimation', [
       transition(':enter', [
         style({
           transform: 'translateX(-40%)',
@@ -14,6 +14,18 @@ import { Component } from '@angular/core';
         }),
         animate('500ms ease-out', style({
           transform: 'translateX(0)',
+          opacity: 1,
+        }))
+      ])
+    ]),
+    trigger('internshipAnimation', [
+      transition(':enter', [
+        style({
+          transform: 'translateY(200%)',
+          opacity: 0,
+        }),
+        animate('800ms ease-out', style({
+          transform: 'translateY(0)',
           opacity: 1,
         }))
       ])

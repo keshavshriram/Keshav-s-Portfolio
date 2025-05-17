@@ -62,3 +62,17 @@ nav img {
 }
 
 
+button:hover .mat-icon {
+  transform: scale(1.05);
+}
+
+
+.mat-icon.text-accent {
+  color: #FFD700; 
+}
+
+
+.rotate-90 {
+  transform: rotateY(180deg);
+}
+

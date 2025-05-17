@@ -1,13 +1,28 @@
 <div class="main-div">
-    <div @internshipAnimation class="internship">
-        <h2>Internship</h2>
-        <hr>
-        <p>Internship Cum Training At Anvistar Pvt. Ltd.</p>
-    </div>
-
-    <div @certificateAnimation class="certificates">
-        <h2>Certificates</h2>
-        <hr>
-        <p *ngFor="let certificate of cerificates">{{certificate}}</p>
+    <div class="m-8 flex flex-col justify-start gap-5 md:flex-row lg:flex-row h-full">
+        <div @experinceAnimation
+            class="text-white bg-[#a7a7ab66] border-[1px] border-[#393992] rounded-lg text-center md:w-[33%] lg:w-[33%] h-fit p-1 : md:p-4 lg:p-4">
+            <h2>Experince</h2>
+            <hr>
+            <br>
+            <p>Innoshri Pvt. Ltd.</p>
+            <p>I have 1 year of professional experience working with Angular and .NET technologies.</p>
+        </div>
+    
+        <div @internshipAnimation
+            class="text-white bg-[#a7a7ab66] border-[1px] border-[#393992] rounded-lg text-center md:w-[33%] lg:w-[33%]  md:mt-[30%] lg:mt-[16%] h-fit p-1 : md:p-4 lg:p-4">
+            <h2>Internship</h2>
+            <hr>
+            <br>
+            <p>Internship Cum Training At Anvistar Pvt. Ltd.</p>
+        </div>
+    
+        <div @certificateAnimation
+            class="text-white bg-[#a7a7ab66] border-[1px] border-[#393992] rounded-lg text-center md:w-[33%] lg:w-[33%] md:justify-self-end lg:justify-self-end md:mt-[55%] lg:mt-[30%] h-fit p-1 : md:p-4 lg:p-4">
+            <h2>Certificates</h2>
+            <hr>
+            <br>
+            <p *ngFor="let certificate of cerificates">{{certificate}}</p>
+        </div>
     </div>
 </div>

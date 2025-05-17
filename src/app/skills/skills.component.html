@@ -1,7 +1,7 @@
 <div class="main-div local-main-div">
     <div @softSkillsAnimation class="soft-skills">
         <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 mt-11">
-          <div *ngFor="let skill of skills" class="justify-items-center col-span-1 mb-8">
+          <div *ngFor="let skill of skills" class="justify-items-center col-span-1 mb-8 lg:mb-20">
             <img [src]="'assets/' + skill.logo" 
                  [alt]="skill.name + ' logo'"
                  (mouseover)="highlightSkill(skill.name, true)"
@@ -14,7 +14,7 @@
 
     
 
-    <div class=" w-9/12 m-auto text-white grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 lg:gap-4  md:mt-8 lg:mt-8">
+    <div class=" w-9/12 m-auto text-white grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 lg:gap-4  md:mt-8 lg:mt-40">
         <div *ngFor="let skill of hardSkills" @hardSkillsAnimation class="flex flex-col items-center p-2 lg:py-[11%] rounded-2xl bg-[#9090aa66]">
             <img [src]="skill.icon" [alt]="skill.name + ' icon'"
                 class="w-[15%] mb-4 hover:scale-110 transition-transform duration-300">

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material/menu';
 import { Router } from '@angular/router';
 
 @Component({
@@ -37,8 +38,23 @@ export class HeaderComponent {
   }
   ];
 
-  selectMenuItem(item : {module: string , route ?: string})
-  {
-    this.router.navigate([item.route]);
+  @ViewChildren(MatMenuTrigger) menuTriggers!: QueryList<MatMenuTrigger>;
+  
+  // Reference to THIS menu's trigger
+  @ViewChild('menuTrigger') menuTrigger!: MatMenuTrigger;
+
+  selectMenuItem(item: {module: string, route?: string}) {
+    if (item.route) {
+      this.router.navigate([item.route]);
+    }
+    this.menuTrigger.closeMenu();
+  }
+
+  closeOtherMenus() {
+    this.menuTriggers?.forEach(trigger => {
+      if (trigger !== this.menuTrigger && trigger.menuOpen) {
+        trigger.closeMenu();
+      }
+    });
   }
 }

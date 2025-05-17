@@ -38,3 +38,26 @@ hr
 {
     margin: 10px 0px;
 }
+
+.about-me-div {
+    max-height: 578px;
+  }
+  
+  /* Height-based media queries */
+  @media (max-height: 889px) {
+    .about-me-div {
+      max-height: 500px;
+    }
+  }
+  
+  @media (max-height: 844px) {
+    .about-me-div {
+      max-height: 450px;
+    }
+  }
+  
+  @media (max-height: 667px) {
+    .about-me-div {
+      max-height: 400px;
+    }
+  }

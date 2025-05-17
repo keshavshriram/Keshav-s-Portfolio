@@ -3,14 +3,25 @@
         <img src="assets/ks_logo_copy.jpg" routerLink="" class="h-[50px] w-[85px] ">
 
         <div class="flex md:hidden lg:hidden ">
-            <button mat-button [matMenuTriggerFor]="menu" class="rounded-full ">
-                <mat-icon class="rounded-full text-white text-xl">menu</mat-icon>
+            
+            <button mat-button [matMenuTriggerFor]="menu" class="rounded-full mt-2 group" #menuTrigger="matMenuTrigger"
+                (click)="closeOtherMenus()">
+                <mat-icon
+                    class="rounded-full text-white !text-[40px] !w-fit !h-fit transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                    [class.rotate-90]="menuTrigger.menuOpen" [class.text-accent]="menuTrigger.menuOpen">
+                    {{menuTrigger.menuOpen ? 'close' : 'menu'}}
+                </mat-icon>
+                <span
+                    class="absolute inset-0 rounded-full bg-white/10 scale-0 group-hover:scale-100 transition-transform duration-200"></span>
             </button>
-            <mat-menu #menu="matMenu" >
-                <ng-container *ngFor="let item of menuOptions">
-                    <button mat-menu-item (click)="selectMenuItem(item)" ><a [routerLink]="item.route"></a>{{item.module}}</button>
-                </ng-container>
-            </mat-menu>
+            
+                <mat-menu #menu="matMenu">
+                    <ng-container *ngFor="let item of menuOptions">
+                        <button mat-menu-item (click)="selectMenuItem(item); menuTrigger.closeMenu()">
+                            {{item.module}}
+                        </button>
+                    </ng-container>
+                </mat-menu>
         </div>
         <ul class="!hidden md:!flex lg:!flex p-2">
             <ng-container *ngFor="let item of menuOptions">
