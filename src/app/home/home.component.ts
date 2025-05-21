@@ -1,5 +1,7 @@
 import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { tsParticles } from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
 
 @Component({
   selector: 'app-home',
@@ -62,4 +64,80 @@ import { Component } from '@angular/core';
     ]),
   ]
 })
-export class HomeComponent {}
+export class HomeComponent implements OnInit {
+  async ngOnInit(): Promise<void> {
+    await loadSlim(tsParticles);
+    
+    await tsParticles.load({
+      id: "tsparticles",
+      options: {
+        fullScreen: {
+          enable: false,
+          zIndex: -1
+        },
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              width: 800,
+              height: 800
+            }
+          },
+          color: {
+            value: "#ffffff"
+          },
+          shape: {
+            type: "circle"
+          },
+          opacity: {
+            value: 0.0
+          },
+          size: {
+            value: { min: 1, max: 3 }
+          },
+          links: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            outModes: "out"
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onHover: {
+              enable: true,
+              mode: "slow",  // This enables the slowdown effect
+              parallax: {
+                enable: false,
+                force: 60,
+                smooth: 10
+              }
+            },
+            
+            onClick: {
+              enable: true,
+              mode: "push"
+            }
+          },
+          modes: {
+            slow: {
+              factor: 0.8,  // Speed reduction factor (0.5 = 50% of normal speed)
+              radius: 200   // Radius of the area affected by hover
+            }
+          }
+        }
+      }
+    });
+  }
+}

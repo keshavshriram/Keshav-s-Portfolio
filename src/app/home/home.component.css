@@ -5,13 +5,26 @@ body{
 
 
 .home-container {
-    background-image: url('/assets/globe1.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    height: 100vh;
-    width: 100%;
-    margin: 0; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  margin: 0; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  background-image: url('/assets/globe1.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .home-container h4,h1 
